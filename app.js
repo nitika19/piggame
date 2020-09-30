@@ -26,6 +26,7 @@ document.querySelector('.btn-roll').addEventListener('click',function(){
         if(dice !== 1){
             // Add score
             roundScore += dice;
+            // print on user iterface
             document.querySelector('#current-' + activePlayer).textContent = roundScore;
 
         }
