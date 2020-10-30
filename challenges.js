@@ -14,7 +14,6 @@ dice, so take a look at code for the first one.)
 
 var scores,roundScore,activePlayer,gamePlaying,lastDice;
 intializeGame();
-//document.querySelector('#current-' + activePlayer).textContent = dice;
  
 document.querySelector('.btn-roll').addEventListener('click',function(){
     if(gamePlaying){
@@ -38,23 +37,6 @@ document.querySelector('.btn-roll').addEventListener('click',function(){
             // Next Player
             nextPlayer();
         }
-        // if(dice===6 && lastDice === 6){
-        //     //Player looses score
-        //     scores[activePlayer] = 0;
-        //     document.querySelector('#score-' + activePlayer).textContent = '0';
-        //     nextPlayer();
-        // }
-        // else if(dice !== 1){
-        //     // Add score
-        //     roundScore += dice;
-        //     document.querySelector('#current-' + activePlayer).textContent = roundScore;
-
-        // }
-        // else{
-        //     // Next Player
-        //     nextPlayer();
-        // }
-        // lastDice = dice;
     }// if end loop
 });
 
